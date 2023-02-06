@@ -3,9 +3,22 @@ package chapter4;
 import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.LinkedList;
 
 public class ArrayDemo {
     public static void main (String[] args) {
+
+        LinkedList<String> newList=new LinkedList<>();
+
+        newList.add("One");
+        newList.add("Two");
+        newList.add("Apple");
+        newList.add("Banana");
+        Collections.sort(newList);
+        System.out.println(newList);
+
+
 
         int[] arr = new int[5];
         byte b = 4; char c = 'c'; long longVar = 10;

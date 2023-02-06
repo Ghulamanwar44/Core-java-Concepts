@@ -7,6 +7,7 @@ import java.util.ListIterator;
 
 public class ListDemo {
     public static void main(String args[]){
+
         List l =new ArrayList();
 
         l.add(100);

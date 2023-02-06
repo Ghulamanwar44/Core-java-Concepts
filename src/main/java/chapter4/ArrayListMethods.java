@@ -89,6 +89,7 @@ public class ArrayListMethods {
         l1.add(s_b2);
         l1.add(s_b3);
         System.out.println (l1.contains(new StringBuilder("Jan")) );
+        System.out.println(l1);
         System.out.println (l1.contains(sb) );
         System.out.println (l1.indexOf(new StringBuilder("Feb")) );
         System.out.println (l1.indexOf(s_b2) );
@@ -167,6 +168,6 @@ class Test{
 
         ArrayList<String> list =new ArrayList<String>();
         Collections.addAll(color_list,"Mango","Apple");
-        System.out.println ("ArrayList ELEMENTD ARE: "+color_list );
+        System.out.println ("ArrayList ELEMENTS ARE: "+color_list );
     }
 }

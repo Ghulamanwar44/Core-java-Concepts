@@ -1,0 +1,18 @@
+ -------ArrayList----------:
+
+1-Acts as List.
+2-Data structure is resizable or growable array.
+3-Elements are stored in contagious memory locations.
+4-ArrayList is better for storing and accessing data.
+5-Bad at data Manipulation
+6-Default capacity of 10 is assigned to the ArrayList.
+7-The memory is allocated at compile-time only.
+
+ --------LinkedList--------:
+ 1-Acts as List and Deque.
+ 2-Doubly linkedList or Circular LinkedList.
+ 3-Elements are not stored in contagious memory locations.
+ 4-Good at data manipulation - insertion or deletion
+ 5-Bad at retrieval of data.
+ 6-In LinkedList, an empty list is created when a LinkedList is initialized.
+ 7-The memory is allocated at run-time.

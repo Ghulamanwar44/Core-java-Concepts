@@ -58,8 +58,8 @@ public class PriorityQueueDemo {
 
 
 
-        // Queue<String> abc = new PriorityQueue<>();  - > ascending order
-        Queue<String> abc = new PriorityQueue<>(Collections.reverseOrder()); // Descending order
+        // Descending order. NOTE: by default it is in ascending order but here we are providing method (Collections.reverse());
+        Queue<String> abc = new PriorityQueue<>(Collections.reverseOrder());
         abc.add("B");
         abc.add("C");
         abc.add("A");

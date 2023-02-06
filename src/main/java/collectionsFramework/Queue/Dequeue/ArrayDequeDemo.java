@@ -2,6 +2,7 @@ package collectionsFramework.Queue.Dequeue;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
+import java.util.Iterator;
 
 public class ArrayDequeDemo {
     public static void main(String args[]){
@@ -52,7 +53,42 @@ public class ArrayDequeDemo {
         String lastElement = animals.removeLast();
         System.out.println("Removed Last Element: " + lastElement);
 
-        System.out.println(animals);
+        System.out.println(
+
+
+
+                animals);
+
+
+        System.out.println("---------------------------------");
+
+
+        // example from documentation
+        ArrayDeque<String> aDeque = new ArrayDeque<> ();
+
+        aDeque.addFirst("tea");
+        aDeque.addFirst("milk");
+        aDeque.addFirst("coffee");
+        aDeque.addLast("sugar");
+
+        /* Iterate through elements in an ArrayDeque instance */
+        for(Iterator iter = aDeque.iterator(); iter.hasNext(); ) {
+            System.out.println(iter.next());
+        }
+        System.out.println();
+
+        aDeque.addFirst("juice");
+        aDeque.addLast("honey");
+
+        System.out.println("First Element : " + aDeque.getFirst());
+        System.out.println("Last Element : " + aDeque.getLast());
+
+        /* Removal of the Deque Elements */
+        System.out.println("First Element(Removed):"+aDeque.removeFirst());
+        System.out.println("Last Element Removed:"+aDeque.removeLast());
+
+        System.out.println("%nPopped Element : " + aDeque.pop()); // returns and removes first element
+        System.out.println("%n Size of Array Deque: " + aDeque.size());
 
         // 2. Remove elements using the poll()-returns+removes 1st element, pollFirst()=poll() and pollLast()=return+delete last element -- --> Same as remove methods
 

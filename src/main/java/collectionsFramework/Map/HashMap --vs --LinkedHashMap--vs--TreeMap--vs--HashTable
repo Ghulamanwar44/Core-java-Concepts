@@ -1,0 +1,53 @@
+---- HashMap--------
+1-In case of HashMap it does not guarantees as to the order of the map also it does not guarantee that the order will remain constant over time.
+2-In the case of HashMap storing one null key as well as of multiple null values are allowed.
+3-HashMap on other hand has the complexity of O(1) in case of its get,put and remove operations.
+4-On other hand HashMap implements simple Map interface and internally uses hashing for storing and retrieval of its elements
+5-HashMap as do not maintain any insertion order of its elements hence is faster as compare to TreeMap also do not sort its elements on the basis of its value so also faster than LinkedHashMap.
+6-On other hand HashMap uses compare() method of Object class for its elements comparison.
+
+
+-HashMap does not keep track of the order of insertions.
+-A Hash Table serves as the foundation for HashMap's underlying data structure.
+-The Null key can be used once in HashMap, and the Null value can be used any number of times.
+-The HashMap class is an extension of the AbstractMap class and an implementation of the Map interface.
+-HashMap processes operations more quickly.
+- HashMap does not keep track of order elements.
+-HashMap supports heterogeneous elements because it does not perform key sorting.
+-When we do not want key-value pairs to be in sorted order, the HashMap data structure should be utilised.
+
+
+-----LinkedHashMap------
+1-LinkedHashMap follows the insertion order of elements and also maintaining an order of elements inserted into it.
+2-LinkedHashmap is internally implemented more similar as HashMap so storing of one null key and of multiple null values are allowed.
+3-LinkedHashMap again has the same complexity as of HashMap i.e O(1).
+4-Alike of TreeMap LinkedHashMap extends HashMap and internally uses hashing as like in HashMap.
+5-LinkedHashMap is faster as compare to TreeMap but is slower than HashMap.
+6-LinkedHashMap also uses compare() method of Object class for its elements comparison
+
+------TreeMap----------
+1-The elements inserted in TreeMap are sorted according to the natural ordering of its keys, or by a Comparator provided at map creation time, depending on which constructor is used.
+2-The internal implementation of TreeMap does not allow storing null key but only null values are allowed.
+3-TreeMap comes with the complexity of its get,put and remove operations as O(log(n)), which is greater than that of HashMap
+4-TreeMap implements SortedMap interface of Collection framework which is a child of Map.And internally TreeMap implements Red-Black Tree(a Self Balancing Binary Search Tree).
+5-TreeMap is maintaining order of its elements hence is lesser in performance index and also requires more memory than HashMap and LinkedHashMap.
+6-Elements in TreeMap get compared by using compareTo() method in which custom implementation could also be provided.
+
+-TreeMap is capable of being Cloned and Serialized, in addition to implementing the NavigableMap interface.
+-The Red-Black Tree is the foundational data structure that TreeMap is built upon.
+-TreeMap does not let the use of a null key, but it does permit the use of a null value any number of times.
+-The TreeMap class extends the AbstractMap base class and implements the SortedMap and NavigableMap interfaces respectively.
+-When compared to HashMap, the operation speed of TreeMap is lower.
+
+-TreeMap preserves insertion order.
+
+--------HashTable---------
+1-Hashtable is synchronized. It is thread-safe and can be shared with many threads.
+2-Hashtable doesn't allow any null key or value.
+3-Hashtable is a legacy class.
+4-Hashtable is slow.
+5-Hashtable is internally synchronized and can't be unsynchronized.
+6-Hashtable is traversed by Enumerator and Iterator.
+7-Hashtable inherits Dictionary class.
+
+

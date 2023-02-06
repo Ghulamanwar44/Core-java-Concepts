@@ -1,0 +1,13 @@
+
+         _________LIST__________
+Ordered Collection      -List provides the facility to maintain the ordered collection.
+Index based             -It contains the index-based methods to insert, update, delete and search the elements.
+can have Duplicates     -It can have the duplicate elements also.
+Can have null values    -We can also store the null elements in the list.
+
+4 implementing classes:
+
+-ArrayList
+-LinkedList
+-Vector
+-Stack

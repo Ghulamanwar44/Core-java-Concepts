@@ -1,0 +1,17 @@
+-------ArrayDeque--------:
+
+-This class implements the Deque and the Queue interface.
+-Unlike Queue, we can add or remove elements from both sides.
+-Null elements are not allowed in the ArrayDeque
+-ArrayDeque is not thread safe, in the absence of external synchronization.
+-ArrayDeque is faster than LinkedList and Stack
+-It uses an array to store its elements, and its size changes dynamically as elements are added or removed.
+
+-------LinkedList---------:
+-LinkedList supports null elements, whereas ArrayDeque doesn't.
+-Each node in a linked list includes links to other nodes. That's why LinkedList requires more storage than ArrayDeque.
+-On the other hand, LinkedList is a better choice if you need fast add and remove operations in the middle of the Deque.
+
+
+-So, if you need a Deque that mainly performs add and remove operations at both ends, ArrayDeque is a better choice.
+-If you need a Deque that mainly performs add and remove operations in the middle, LinkedList is a better choice.
