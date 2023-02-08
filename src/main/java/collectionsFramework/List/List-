@@ -5,9 +5,21 @@ Index based             -It contains the index-based methods to insert, update, 
 can have Duplicates     -It can have the duplicate elements also.
 Can have null values    -We can also store the null elements in the list.
 
+
+-----Methods------
+add(E e):         Adds an element to the end of the list.
+remove(int index): Removes the element at the specified position in the list.
+get(int index):     Returns the element at the specified position in the list.
+set(int index, E element): Replaces the element at the specified position in the list with the specified element.
+indexOf(Object o): Returns the index of the first occurrence of the specified element in the list, or -1 if the element is not present.
+contains(Object o): Returns true if the list contains the specified element.
+size(): Returns the number of elements in the list.
+clear(): Removes all of the elements from the list.
+
+
 4 implementing classes:
 
--ArrayList
--LinkedList
--Vector
+-ArrayList  -best for data retrieval
+-LinkedList -best for data manipulation
+-Vector     -
 -Stack

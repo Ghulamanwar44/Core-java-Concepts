@@ -6,33 +6,19 @@ import java.util.Queue;
 public class QueueDemo {
     public static void main(String args[]) {
 
-        //
-
-
         /*
-           Being an interface, the queue requires, for the declaration, a concrete class,
-           and the most common classes are the LinkedList and PriorityQueue in Java.
-           Implementations done by these classes are not thread safe.
-           If it is required to have a thread safe implementation, PriorityBlockingQueue is an available option. */
-/*
-    ome of the commonly used methods of the Queue interface are:
-
-     add() - Inserts the specified element into the queue. If the task is successful, add() returns true, if not it throws an exception.
-     offer() - Inserts the specified element into the queue. If the task is successful, offer() returns true, if not it returns false.
-     element() - Returns the head of the queue. Throws an exception if the queue is empty.
-     peek() - Returns the head of the queue. Returns null if the queue is empty.
-     remove() - Returns and removes the head of the queue. Throws an exception if the queue is empty.
-     poll() - Returns and removes the head of the queue. Returns null if the queue is empty.
-*/
-
-
+           -
+           -If it is required to have a thread safe implementation, PriorityBlockingQueue is an available option.
+        */
 
         Queue<String> queue = new LinkedList<>();
 
         queue.add("First");
         queue.add("Second");
         queue.add("Third");
-
+        queue.offer("Fourth");
+        queue.add(null);
+        queue.add(null);
 
         System.out.println("Queue elements"+queue);
 

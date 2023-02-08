@@ -1,0 +1,35 @@
+-------Set----------
+
+- Uniqueness: A Set does not allow duplicate elements. If an attempt is made to add a duplicate element to a set, it will be ignored.
+- Ordering: The order of elements in a set is not specified and may change with time. The set does not provide positional access to its elements.
+- Null values: Some Set implementations allow one or more null values, while others do not.
+- Thread-Safety:  Some Set implementations, such as ConcurrentHashMap, are designed to be thread-safe.
+- Java Set does NOT provide a control over the position where you can insert an element. You cannot access elements by their index and also search elements in the list.
+- Set allows you to add at most one null element only.
+- Unlike List and arrays, Set does NOT support indexes or positions of it’s elements
+- Set allows you to add at most one null element only. Except for TreeSet because it doesn't allow any null.
+
+
+----------Methods---------:
+
+add(E e): --------->  Adds the specified element to the set if it is not already present.
+remove(Object o): --> Removes the specified element from the set if it is present.
+contains(Object o):-> Returns true if the set contains the specified element.
+size(): ------> Returns the number of elements in the set.
+isEmpty(): ---> Returns true if the set contains no elements.
+clear(): -----> Removes all of the elements from the set.
+
+
+
+-------Implementation-------
+
+1----Use HashSet------:
+     When there is no need to keep any order in elements but group of unique objects is needed.
+
+2----Use LinkedHashSet---:
+   When group of unique elements is needed and insertion order of elements is also required.
+
+3------TreeSet-----------:
+    When group of unique items/elements/objects is needed and sorting of the elements is required according to some Comparator.
+
+

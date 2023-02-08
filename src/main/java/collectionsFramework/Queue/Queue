@@ -1,0 +1,32 @@
+-----------Queue----------
+
+1-Elements are processed in Queue AS First In First Out (FIFO) manner.
+2-The ordering of the elements in the queue is maintained, and the order of the elements is not changed.
+3-Allows multiple Null and Duplicates as well.
+4-Queues typically, but do not necessarily, order elements in a FIFO (first-in-first-out) manner. Among the exceptions are priority queues, which order elements according to a supplied comparator, or the elements natural ordering.
+5-In a queue, the item first inserted into the queue will be out first
+
+------Implementation------
+
+-ArrayDeque - So, if you need a Deque that mainly performs add and remove operations at both ends, ArrayDeque is a better choice.
+-LinkedList - If you need a Deque that mainly performs add and remove operations in the middle, LinkedList is a better choice.
+-PriorityQueue   - Used when we have items that have some priorities.
+                 - The major advantage of using a priority queue is that you will be able to quickly access the highest priority item with a time complexity of just O(1).
+
+
+
+---Methods-----
+ome of the commonly used methods of the Queue interface are:
+
+     add() - Inserts the specified element into the queue. If the task is successful, add() returns true, if not it throws an exception.
+     offer() - Inserts the specified element into the queue. If the task is successful, offer() returns true, if not it returns false.
+     element() - Returns the head of the queue. Throws an exception if the queue is empty.
+     peek() - Returns the head of the queue. Returns null if the queue is empty.
+     remove() - Returns and removes the head of the queue. Throws an exception if the queue is empty.
+     poll() - Returns and removes the head of the queue. Returns null if the queue is empty.
+
+----Deque interface Methods------
+
+The methods addFirst(e), removeFirst(), addLast(e),
+removeLast(), getFirst(), and getLast() are defined in the Deque
+interface.

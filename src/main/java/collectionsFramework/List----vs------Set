@@ -1,0 +1,18 @@
+---------List----------
+1.List is an index based data structure. (Like array and string)
+2-List can store duplicate elements.
+3-Can store any number of null values.
+4-List follows the insertion order.
+5-We can Iterate elements by Iterator and ListIterator.
+
+--------Set-------
+1.Not index based , set stores data according to the hashcode value.
+2.Set does not allow any duplicate element.
+3.Set cam store only one null value except TreeSet that doesnt allow one null also.
+4-Does not follow insertion order.
+5-We can iterate set elements by Iterator.
+
+-------Queue-----------
+1-A Queue is defined as a linear data structure that is open at both ends and the operations are performed in First In First Out (FIFO) order.
+2-
+

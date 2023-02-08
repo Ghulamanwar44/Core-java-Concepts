@@ -23,7 +23,7 @@ public class LinkedHashMapDemo {
         lhm.put(2,"Geeks");
         lhm.put(1,"Geeks");
         lhm.put(4,"Geeks");
-
+        lhm.put(5,null);
         // Printing mappings to the console
         System.out.println("Initial map : " + lhm);
 

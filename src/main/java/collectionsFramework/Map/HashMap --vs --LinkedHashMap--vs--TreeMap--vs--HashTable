@@ -12,7 +12,7 @@
 -The Null key can be used once in HashMap, and the Null value can be used any number of times.
 -The HashMap class is an extension of the AbstractMap class and an implementation of the Map interface.
 -HashMap processes operations more quickly.
-- HashMap does not keep track of order elements.
+-HashMap does not keep track of order elements.
 -HashMap supports heterogeneous elements because it does not perform key sorting.
 -When we do not want key-value pairs to be in sorted order, the HashMap data structure should be utilised.
 
@@ -46,8 +46,27 @@
 2-Hashtable doesn't allow any null key or value.
 3-Hashtable is a legacy class.
 4-Hashtable is slow.
-5-Hashtable is internally synchronized and can't be unsynchronized.
+5-Hashtable is internally synchronized and can't be un-synchronized.
 6-Hashtable is traversed by Enumerator and Iterator.
 7-Hashtable inherits Dictionary class.
+
+
+---HashMap: An unsorted and unordered Map implementation that uses a hash table for storage.
+             It provides constant time performance for basic operations (get and put).
+             It's the most commonly used Map implementation and is recommended for general use.
+
+-----TreeMap:  A sorted and ordered Map implementation based on a red-black tree data structure.
+               It provides guaranteed log(n) time complexity for basic operations like get and put.
+               It's best used when you need a sorted Map and/or if you frequently use operations that require
+                a sorted view of the keys, such as firstKey, lastKey, headMap, and tailMap.
+
+------LinkedHashMap:  A Map implementation that preserves the order of its entries based on the order in
+                      which they were inserted or the last time they were accessed. It provides the same constant-time
+                      performance as HashMap for basic operations but its iteration order is predictable.
+                      Use this if you want a Map that retains the order of its elements.
+
+------ConcurrentHashMap: A concurrent and thread-safe Map implementation that is used in multithreaded environments.
+                         It provides lock-free and atomic operations and is the recommended Map implementation
+                         for use in multi-threaded environments.
 
 

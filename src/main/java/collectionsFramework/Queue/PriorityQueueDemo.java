@@ -80,7 +80,6 @@ public class PriorityQueueDemo {
             System.out.println(cgpa.poll());
         }
 
-
     }
 }
 
