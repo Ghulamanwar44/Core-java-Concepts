@@ -1,0 +1,4 @@
+Q: create pool of 2 threads. One thread adds first ten even numbers to a variable "sum" of class Count.
+And other threads adds first ten odd numbers to that same variable (object reference of Count class should be same).
+
+Use getter/setter for sum variable of Count class
